@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.canvas.Canvas?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Text?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controleur.controleur">
+   <children>
+      <Canvas fx:id="Plateau" height="254.0" onKeyPressed="#handleKeyPress" width="307.0" />
+      <Button fx:id="Quitter" layoutX="430.0" layoutY="346.0" mnemonicParsing="false" onAction="#QuitterPartie" prefHeight="24.0" prefWidth="124.0" text="Quitter Partie" />
+      <Text layoutX="373.0" layoutY="36.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Jeu de Snake" wrappingWidth="113.56982421875" />
+      <Text fx:id="Joueur1" layoutX="401.0" layoutY="87.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Joueur" wrappingWidth="76.60888671875" />
+      <Text fx:id="Joueur2" layoutX="401.0" layoutY="142.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Joueur" wrappingWidth="76.60888671875" />
+      <Text fx:id="nomJoueur1" layoutX="492.0" layoutY="87.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" />
+      <Text fx:id="nomJoueur2" layoutX="492.0" layoutY="142.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" />
+      <Canvas fx:id="Serpent2" height="39.0" width="144.0" />
+      <Canvas fx:id="Serpent1" height="33.0" width="159.0" />
+      <Button fx:id="Demarrer" layoutX="33.0" layoutY="346.0" mnemonicParsing="false" onAction="#Demarrer" prefHeight="24.0" prefWidth="124.0" text="Demarrer" />
+      <Canvas fx:id="nourriture" height="200.0" width="200.0" />
+      <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="354.0" layoutY="164.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../../../Téléchargements/JeuSnake.jpg" />
+         </image>
+      </ImageView>
+   </children>
+</Pane>
